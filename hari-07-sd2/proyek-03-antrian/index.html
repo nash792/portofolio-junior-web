@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <p class="eyebrow">PROYEK 3 · PBL HARI 7</p>
+        <h1>Simulator Antrean dan Riwayat</h1>
+        <p class="subtitle">
+          Sistem antrean pasien klinik sederhana dan editor catatan dengan fitur
+          undo/redo.
+        </p>
+      </div>
+    </header>
+
+    <main class="container main-grid">
+      <section class="panel" aria-labelledby="queue-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Antrian</p>
+            <h2 id="queue-title">Antrean Loket</h2>
+          </div>
+          <span class="pill">FIFO · LinkedQueue</span>
+        </div>
+
+        <div class="current-ticket" aria-live="polite">
+          <p class="muted">Nomor yang dipanggil</p>
+          <p id="nomorDipanggil" class="ticket-number">—</p>
+          <p id="pesanAntrean" class="status-message">
+            Belum ada nomor yang dipanggil.
+          </p>
+        </div>
+
+        <div class="button-row">
+          <button id="ambilNomor" class="button button-primary" type="button">
+            ＋ Ambil Nomor
+          </button>
+          <button id="panggilNomor" class="button button-dark" type="button">
+            Panggil Berikutnya
+          </button>
+          <button id="resetAntrean" class="button button-danger" type="button">
+            Reset
+          </button>
+        </div>
+
+        <div class="stats">
+          <div class="stat-card">
+            <span class="muted">Menunggu</span>
+            <strong id="jumlahAntrean">0</strong>
+          </div>
+          <div class="stat-card">
+            <span class="muted">Total nomor dibuat</span>
+            <strong id="totalNomor">0</strong>
+          </div>
+        </div>
+
+        <div class="list-section">
+          <h3>Daftar yang Menunggu</h3>
+          <ol id="daftarAntrean" class="ticket-list">
+            <li class="empty-state">Belum ada pasien dalam antrean.</li>
+          </ol>
+        </div>
+
+        <div class="list-section">
+          <h3>5 Nomor Terakhir Dipanggil</h3>
+          <ol id="riwayatPanggilan" class="history-list">
+            <li class="empty-state">Belum ada riwayat panggilan.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="notes-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Editorrr</p>
+            <h2 id="notes-title">Editor Catatan</h2>
+          </div>
+          <span class="pill">Stack · Undo/Redo</span>
+        </div>
+
+        <label for="catatan" class="field-label">Catatan klinik</label>
+        <textarea
+          id="catatan"
+          rows="10"
+          placeholder="Ketik catatan di sini..."
+        ></textarea>
+
+        <div class="button-row">
+          <button id="undo" class="button button-dark" type="button" disabled>
+            ↶ Undo
+          </button>
+          <button id="redo" class="button button-dark" type="button" disabled>
+            ↷ Redo
+          </button>
+          <button
+            id="hapusCatatan"
+            class="button button-secondary"
+            type="button"
+          >
+            Bersihkan
+          </button>
+        </div>
+        <div class="history-counter" aria-live="polite">
+          <span>Undo tersedia: <strong id="jumlahUndo">0</strong></span>
+          <span>Redo tersedia: <strong id="jumlahRedo">0</strong></span>
+          <span>Batas: <strong>50 langkah</strong></span>
+        </div>
+        <p id="pesanCatatan" class="status-message" role="status">
+          Catatan siap diedit.
+        </p>
+        <p class="helper-text">
+          Catatan disimpan otomatis di browser ini. Riwayat undo/redo dibatasi
+          maksimal 50 langkah.
+        </p>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>Proyek pembelajaran struktur data, algoritma, dan clean code.</p>
+    </footer>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
