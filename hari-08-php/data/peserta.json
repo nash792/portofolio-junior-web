@@ -1,0 +1,37 @@
+[
+    {
+        "nama": "Sari",
+        "kelas": "Web",
+        "nilai": 90
+    },
+    {
+        "nama": "Tedy",
+        "kelas": "Web",
+        "nilai": 70
+    },
+    {
+        "nama": "Citra",
+        "kelas": "Data",
+        "nilai": 72
+    },
+    {
+        "nama": "Wildan",
+        "kelas": "Web",
+        "nilai": 72
+    },
+    {
+        "nama": "Budi",
+        "kelas": "Web",
+        "nilai": 90
+    },
+    {
+        "nama": "Cindy",
+        "kelas": "Data",
+        "nilai": 86
+    },
+    {
+        "nama": "Dewi",
+        "kelas": "Data",
+        "nilai": 88
+    }
+]

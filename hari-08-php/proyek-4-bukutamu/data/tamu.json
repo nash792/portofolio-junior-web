@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nama": "rtyui",
+        "email": "nashrull792@gmail.com",
+        "pesan": "fghjhghj",
+        "waktu": "2026-10-28 07:18:24"
+    },
+    {
+        "id": 2,
+        "nama": "defry",
+        "email": "defry@defry.com",
+        "pesan": "icikiwir",
+        "waktu": "2026-10-28 07:19:23"
+    },
+    {
+        "id": 3,
+        "nama": "Wilda",
+        "email": "wilwil@gmail.com",
+        "pesan": "esteh enak pol",
+        "waktu": "2026-10-28 07:30:24"
+    },
+    {
+        "id": 4,
+        "nama": "acong",
+        "email": "acong@gmail.com",
+        "pesan": "<script>alert(1)<\/script>",
+        "waktu": "2026-10-28 07:51:41"
+    }
+]
