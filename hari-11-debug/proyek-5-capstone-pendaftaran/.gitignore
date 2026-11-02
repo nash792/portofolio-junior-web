@@ -1,0 +1,7 @@
+# Konfigurasi lokal berisi kredensial
+/config/config.php
+/.env
+/vendor/
+/node_modules/
+/data/
+/*.log
