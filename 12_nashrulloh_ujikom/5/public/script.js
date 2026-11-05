@@ -1,0 +1,1 @@
+console.log('Static file server berhasil dijalankan!!!');
